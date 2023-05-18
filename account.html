@@ -53,6 +53,12 @@ li a:hover {
   background-color: #111;
 }
 
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
 div {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -61,49 +67,18 @@ div {
   padding: 8px;
 }
 
-
-p {
-  text-align: justify;
-  letter-spacing: 3px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 15px;
-}
-
-h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 50px;
-}
-
-h4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30px;
-}
-
-h6 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-}
-
-div.gallery {
-  margin: 20px;
-  margin-right: 100px;
-  float: left;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
 input[type=text], select {
   width: 30%;
   padding: 12px 20px;
   margin: 8px 0;
+  margin-left: 20px;
+  margin-right: 40px;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 20px;
   box-sizing: border-box;
 }
+
 
 input[type=submit] {
   width: 20%;
@@ -123,6 +98,8 @@ input[type=submit]:hover {
 div {
   padding: 20px;
 }
+
+
 
 
 
@@ -155,34 +132,9 @@ footer {
     
   </ul>
 
-<section>
- 
-    <div>
-        
-        <p>Il viaggio che ha portato Edward Weston a realizzare le sue opere inizia da giovane, quando gli viene regalata la prima macchina fotografica dal padre, il quale gli raccomanda di non interessarsi ad oggetti di poca importanza.
-
-            Ovviamente Weston comincerà a fotografare proprio gli oggetti di uso comune.
-            
-            Il suo interesse non si limita alla sola realizzazione dell’immagine, ma anche all’aspetto teorico della fotografia.
-        </p>
-
-        <h4>
-            “Qualsiasi cosa mi emoziona, per qualsiasi motivo, la fotografo; non ricerco soggetti inusuali ma rendo insoliti anche i luoghi comuni”. <br>
-            <h6>
-                Cit. Edward Weston
-            </p>
-        </h4>
-    </div>
-  
-    <div class="gallery">
-        
-          <img src="Edward-Weston.jpg" alt="Edward Weston" width="900" height="800">
-        
-    </div>
-</section>
-
 <div>
-  <h4> Accedi </h4>
+    <h1>Il mio account</h1>
+    <h2> Accedi</h2>
     <form action="/action_page.php">
       <label for="fname">E-Mail</label>
       <input type="text" id="email" name="email" placeholder="m.rossi@gmail.com">
@@ -193,15 +145,55 @@ footer {
     
       <input type="submit" value="Accedi" >
     </form>
-  </div>
-
-
-<footer>
-  <img src="logo.png" alt="logo" width="50" height="50" >
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2> Iscriviti</h2>
+    <form action="/action_page.php">
+      <label for="fname">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="es.Anna">
   
- 
-</footer>
+      <label for="lname">Cognome</label>
+      <input type="text" id="nome" name="nome" placeholder="es.Rossi">
+      </select>
+      <br>
+      <br>
+      <br>
+      <br>
 
-</body>
+      <label for="fname">N Cell</label>
+      <input type="text" id="cell" name="cell" placeholder="+ 39 ">
+  
+      <label for="lname">Residenza</label>
+      <input type="text" id="residenza" name="residenza" placeholder="Via/Viale">
+      </select>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <label for="fname">E-Mail</label>
+      <input type="text" id="email" name="email" placeholder="es.arossi@gmail.com">
+  
+      <label for="lname">Password</label>
+      <input type="text" id="password" name="password" placeholder="0000">
+      </select>
+    
+      <input type="submit" value="Iscriviti" >
+    </form>
+   
+</div>
+        <footer>
+        <img src="logo.png" alt="logo" width="50" height="50" >
+        
+    
+        </footer>
+    </body>
+
 </html>
 
