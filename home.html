@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #1c1c1c;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 50px;
+  padding: 8px;
+}
+
+
+p {
+  text-align: justify;
+  letter-spacing: 3px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+h6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+div.gallery {
+  margin: 20px;
+  margin-right: 100px;
+  float: left;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+input[type=text], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #404040;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #000000;
+}
+
+div {
+  padding: 20px;
+}
+
+
+
+/* Style the footer */
+footer {
+  background-color: #1c1c1c;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+}
+
+
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="logo" width="100" height="100">
+  <h2>Edward Weston</h2>
+</header>
+
+<ul>
+    <li><a class="home" href="#home">Home</a></li>
+    <li><a href="#mostra">La Mostra</a></li>
+    <li><a href="#biglietti">Biglietti</a></li>
+    <li><a href="#contatti">Contatti</a></li>
+    <li><a href="#account">Account</a></li>
+    
+  </ul>
+
+<section>
+ 
+    <div>
+        
+        <p>Il viaggio che ha portato Edward Weston a realizzare le sue opere inizia da giovane, quando gli viene regalata la prima macchina fotografica dal padre, il quale gli raccomanda di non interessarsi ad oggetti di poca importanza.
+
+            Ovviamente Weston comincerà a fotografare proprio gli oggetti di uso comune.
+            
+            Il suo interesse non si limita alla sola realizzazione dell’immagine, ma anche all’aspetto teorico della fotografia.
+        </p>
+
+        <h4>
+            “Qualsiasi cosa mi emoziona, per qualsiasi motivo, la fotografo; non ricerco soggetti inusuali ma rendo insoliti anche i luoghi comuni”. <br>
+            <h6>
+                Cit. Edward Weston
+            </p>
+        </h4>
+    </div>
+  
+    <div class="gallery">
+        
+          <img src="Edward-Weston.jpg" alt="Edward Weston" width="900" height="800">
+        
+    </div>
+</section>
+
+<div>
+  <h4> Accedi o Registrati</h4>
+    <form action="/action_page.php">
+      <label for="fname">E-Mail</label>
+      <input type="text" id="email" name="email" placeholder="m.rossi@gmail.com">
+  
+      <label for="lname">Password</label>
+      <input type="text" id="password" name="password" placeholder="0000">
+      </select>
+    
+      <input type="submit" value="Accedi" >
+    </form>
+  </div>
+
+
+<footer>
+  <img src="logo.png" alt="logo" width="50" height="50" >
+  
+ 
+</footer>
+
+</body>
+</html>
+
